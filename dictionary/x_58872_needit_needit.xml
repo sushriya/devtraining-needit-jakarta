@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="1" type="collection">
+        <element label="New field 2" max_length="40" name="new_field_2" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Legal 1" label="What needed" mandatory="true" max_length="40" name="u_cwhat_needed" type="string">
+            <choice>
+                <element label="Human Resources 1" sequence="0" value="hr 1"/>
+                <element label="Human Resources 2" sequence="1" value="hr 2"/>
+                <element label="Legal 1" sequence="2" value="Legal 1"/>
+                <element label="Legal 2" sequence="3" value="Legal 2"/>
+                <element label="Facilities 1" sequence="4" value="Facilities 1"/>
+                <element label="Facilities 2" sequence="5" value="Facilities 2"/>
+                <element label="Your Department choice 1" sequence="6" value="Your choice 1"/>
+                <element label="Your Department choice 2" sequence="7" value="Your choice 2"/>
+            </choice>
+        </element>
+        <element label="New field 3" max_length="40" name="u_field_3" type="integer"/>
+        <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="Legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element label="Human Resources" sequence="0" value="hr"/>
+                <element label="Facilities" sequence="1" value="Facilities"/>
+                <element label="Legal" sequence="2" value="Legal"/>
+                <element label="Your Department choice" sequence="3" value="Your choice"/>
+            </choice>
+        </element>
+        <element label="When needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
+    </element>
+</database>
