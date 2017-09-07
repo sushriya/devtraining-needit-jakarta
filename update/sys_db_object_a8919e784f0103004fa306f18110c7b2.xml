@@ -14,7 +14,7 @@
         <label>NeedIt</label>
         <live_feed_enabled>false</live_feed_enabled>
         <name>x_58872_needit_needit</name>
-        <number_ref display_value="NEE">f5d1d2bc4f0103004fa306f18110c724</number_ref>
+        <number_ref display_value="NI">f5d1d2bc4f0103004fa306f18110c724</number_ref>
         <provider_class/>
         <read_access>true</read_access>
         <super_class display_value="Task" name="task">3e798f46e00332003399186128118fca</super_class>
